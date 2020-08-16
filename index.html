@@ -38,7 +38,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav h-100">
+                <ul class="navbar-nav h-100 w-100">
                     <li class="pt-1 nav-item-custom active">
                         <i class="nav-link-custom fas fa-search"></i>
                     </li>
@@ -58,6 +58,16 @@
                     </li>
                     <li class="nav-item-custom">
                         <a class="nav-link-custom" href="#">Contacts</a>
+                    </li>
+                    <li class="nav-item-custom ml-auto">
+                        <a class="nav-link-custom nav-icon-heart" href="#">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item-custom">
+                        <a class="nav-link-custom nav-icon-cart" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -102,7 +112,7 @@
                 <div class="col-md-7 pr-0">
                     <h2 class="mb-3 text-main">Man bunh helvetica biodiesel</h2>
                     <div class="review-container d-flex justify-content-between">
-                        <div class="starts">
+                        <div class="stars">
                             <i class="fas fa-star text-main"></i>
                             <i class="fas fa-star text-main"></i>
                             <i class="fas fa-star text-main"></i>
@@ -136,7 +146,10 @@
                         </div>
                     </div>
 
-                    <h6 class="mt-4 mb-3">Size:</h6>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h6 class="mt-4 mb-3">Size:</h6>
+                        <a href="#" class="text-secondary" style="text-decoration: underline">View size guide</a>
+                    </div>
                     <div class="d-flex size-container align-items-center">
                         <div class="size-each">
                             <p>S</p>
@@ -191,7 +204,7 @@
     </div>
 
     <!-- Nav Section -->
-    <div class="container">
+    <div class="container mt-5">
         <ul class="nav nav-tabs">
             <li class="nav-item">
               <a class="nav-link gray-text" href="#">Information</a>
@@ -206,21 +219,39 @@
         <div class="container">
             <div class="review-wrapper">
                 <div class="single-review d-flex mt-4">
-                    <div class="user-avatar" style="width: 20%">
+                    <div class="user-avatar mr-5">
                         <i class="fas fa-user-circle" style="font-size: 95px; color: #E6E6E6"></i>
                     </div>
                     <div class="review-content">
-                        <h6>Milana Frankone</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6>Milana Frankone</h6>
+                            <div class="stars">
+                                <i class="fas fa-star text-main"></i>
+                                <i class="fas fa-star text-main"></i>
+                                <i class="fas fa-star text-main"></i>
+                                <i class="far fa-star text-main"></i>
+                                <i class="far fa-star text-main"></i>
+                            </div>
+                        </div>
                         <p class="text-muted">Jul 26, 2016 | 2:00pm <i class="ml-3 text-black fas fa-reply"></i></p>
                         <p>Whatever drinking vinegar disrupt, echo park banjo skateboard four dollar toast flexitarian ethical 3 wolf moon fap irony typewriter tacos. Swag cardigan beard, pabst plaid street art portland. </p>
                     </div>
                 </div>
                 <div class="single-review d-flex mt-4">
-                    <div class="user-avatar" style="width: 34%">
+                    <div class="user-avatar mr-5">
                         <i class="fas fa-user-circle" style="font-size: 95px; color: #E6E6E6"></i>
                     </div>
                     <div class="review-content">
-                        <h6>John Doe</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6>John Doe</h6>
+                            <div class="stars">
+                                <i class="fas fa-star text-main"></i>
+                                <i class="fas fa-star text-main"></i>
+                                <i class="fas fa-star text-main"></i>
+                                <i class="fas fa-star text-main"></i>
+                                <i class="far fa-star text-main"></i>
+                            </div>
+                        </div>
                         <p class="text-muted">Jul 26, 2016 | 2:00pm <i class="ml-3 text-black fas fa-reply"></i></p>
                         <p>Fanny pack actually roof party, shabby chic fashion axe mustache yuccie chambray single-origin coffee semiotics etsy brunch put a bird on it. Microdosing next level dreamcatcher, ennui art party celiac brunch tilde craft beer flexitarian cronut 3 wolf moon etsy. Tote bag vinyl fixie keytar, jean shorts deep v cronut PBR&B vegan mustache lomo. </p>
                     </div>
@@ -264,9 +295,9 @@
 
     <!-- Related Products Section -->
     <section id="related-products">
-        <div class="container pt-5">
+        <div class="container pt-5 mt-5 pb-5">
             <h2 class="mb-5 pt-5">Related products</h2>
-            <div class="row">
+            <div class="row pb-5">
                 <div class="col-md-3 text-center">
                     <div class="rel-prd-wrp new-prd">
                         <img src="assets/img/single_product_large.png" class="img-fluid mb-3" alt="">
@@ -302,6 +333,82 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6>Get in touch</h6>
+                    <p>King Street, Melbourne Victoria 3000 Australia</p>
+                    <h4>8 800 595 82 12</h4>
+                    <small>mail@email.com</small>
+                </div>
+                <div class="col-md-2">
+                    <h6>Useful Links</h6>
+                    <ul>
+                        <li>Alice</li>
+                        <li>Wondered</li>
+                        <li class="font-weight-bold">Companion</li>
+                        <li>Wondered</li>
+                        <li>MOdesty</li>
+                        <li>Queen</li>
+                        <li>Satisfaction</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6>Recent posts</h6>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="assets/img/post-thumb.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="post-wrapper">
+                                <p class="font-weight-bold">Looking cautiously round, to ascertain that they</p>
+                                <p class="text-gray">September 28, 2016</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="assets/img/post-thumb.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="post-wrapper">
+                                <p class="font-weight-bold">Revolutions of government, he would make his</p>
+                                <p class="text-gray">September 28, 2016</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h6>Feedback</h6>
+                    <form action="" class="feedback-form">
+                        <input type="email" placeholder="Your email" class="form-control">
+                        <textarea name="message" placeholder="Message" class="form-control"></textarea>
+                        <div class="feedback-btns d-flex justify-content-between align-items-center mt-4">
+                            <button>Submit form</button>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-social-icons">
+                <i class="fab fa-twitter ml-3 mr-1"></i>
+                <i class="fab fa-facebook-f ml-3 mr-1"></i>
+                <i class="fab fa-pinterest-p ml-3 mr-1"></i>
+                <i class="fab fa-vimeo-v header-icon rounded-circle ml-3 mr-1"></i>
+                <i class="fab fa-youtube ml-3 mr-1"></i>
+                <i class="fab fa-linkedin-in ml-3 mr-1"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Credit section -->
+    <div id="credit">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <p class="mb-0" style="color: gray;">&copy;2016 - Lenox Multi Concept Template</p>
+            <p class="mb-0" style="color: gray;">Created by Torbara</p>
+        </div>
+    </div>
 
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
