@@ -4,6 +4,9 @@
 .text-secondary{
     color: #666666;
 }
+.text-gray{
+    color: lightgray;
+}
 /* Header */
 .header-icon{
     color: white;
@@ -25,9 +28,24 @@
     margin-right: 40px !important;
     display: block;
 }
+.nav-link-custom:hover{
+    text-decoration: none !important;
+}
 .nav-item-custom .active{
     color: #BDB6B1 !important;
     border-bottom: 3px solid lightgray !important;
+}
+.nav-icon-heart{
+    margin-right: 1rem !important;
+}
+.nav-icon-cart::after{
+    content: "2";
+    position: absolute;
+    top: 25%;
+    background: #77645E;
+    border-radius: 50%;
+    padding: 1px 6px;
+    font-size: 12px;
 }
 
 /* Breadcrumb */
@@ -124,12 +142,12 @@
 .gray-text{
     color: gray;
 }
-.review-form input, textarea{
+.review-form input, .review-form textarea{
     border-radius: 0 !important;
     padding: 25px !important;
     border-color: #77645E !important;
 }
-.review-form input::placeholder, textarea::placeholder{
+.review-form input::placeholder, .review-form textarea::placeholder{
     color: #77645E !important;
 }
 .send-btn{
@@ -152,4 +170,54 @@
     top: 3%;
     right: 10%;
     color: white;
+}
+
+/* Footer */
+#footer{
+    background-color: #242424;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+#footer h6{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#footer ul{
+    padding-left: 19px;
+}
+
+.feedback-form input{
+    margin-bottom: 2px;
+}
+.feedback-form input, .feedback-form textarea{
+    background-color: #686563;
+    padding: 25px !important;
+    border: none;
+}
+.feedback-form textarea{
+    padding-top: 10px !important;
+}
+.feedback-form input::placeholder, .feedback-form textarea::placeholder{
+    color: lightgray;
+}
+.feedback-form button{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+
+@media (max-width: 992px) {
+    .nav-link-custom{
+        padding: 5px 0 !important;
+    }
+    .navbar-nav .ml-auto{
+        margin-left: 0 !important;
+    }
+    .navbar-nav{
+        padding: 15px 0;
+    }
+    .nav-icon-cart::after{
+        top: 85%;
+    }
 }
